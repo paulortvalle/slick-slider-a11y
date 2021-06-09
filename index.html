@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Slick CSS -->
+    <link href="css/slick.min.css" rel="stylesheet">
+    <link href="css/slick-implementation.css" rel="stylesheet">
+
+    <title>Slick Slider with custom a11y</title>
+</head>
+<body>
+
+<div class="container my-5">
+
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1>Slick slider implementation with essential accessibility rules</h1>
+            <p>Slick source: https://kenwheeler.github.io/slick/</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+
+            <!-- Slick Code -->
+            <div class="slider">
+
+                <div class="autoplay">
+                    <button class="play" aria-label="Resume slides">Resume</button>
+                    <button class="pause" aria-label="Pause slides">Pause</button>
+                </div>
+
+                <div class="dots" role="tablist" aria-label="Select slides">
+                    <button class="btn-dots active" aria-label="Slide 1: Title of Slide 1" role="tab" aria-selected="true" data-slide="0"></button>
+                    <button class="btn-dots" aria-label="Slide 2: Title of Slide 2" role="tab" aria-selected="false" data-slide="1"></button>
+                    <button class="btn-dots" aria-label="Slide 3: Title of Slide 3" role="tab" aria-selected="false" data-slide="2"></button>
+                </div>
+
+                <button class="prev" aria-label="Previous slide" tabindex="-1"> < </button>
+                <button class="next" aria-label="Next slide" tabindex="-1"> > </button>
+
+                <div class="slick">
+                    <a href="#" class="btn item" title="Description of Slide 1" style="background-image: url( 'img/ladybird-1367182-640x480.jpg' )"></a>
+                    <a href="#" class="btn item" title="Description of Slide 2" style="background-image: url( 'img/one-tree-hill-1360813-639x424.jpg' )"></a>
+                    <a href="#" class="btn item" title="Description of Slide 3" style="background-image: url( 'img/water-lilly-1368676-638x425.jpg' )"></a>
+                </div>
+
+            </div>
+            <!-- /Slick Code -->
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- Bootstrap Bundle with Popper -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Slick JS -->
+<script src="js/slick.min.js"></script>
+<script src="js/slick-implementation.js"></script>
+
+</body>
+</html>

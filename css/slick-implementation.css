@@ -1,0 +1,101 @@
+.slider {
+    position: relative;
+}
+
+.slider .slick {
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.slider .slick .slick-list {
+    height: 100%;
+}
+
+.slider .slick .slick-track {
+    min-height: 300px;
+    height: 100%;
+    display: flex;
+    align-content: stretch;
+}
+
+.slider .slick .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.slider .autoplay {
+    position: absolute;
+    left: 26.5px;
+    top: 26.5px;
+    z-index: 10;
+}
+
+.slider .autoplay .pause,
+.slider .autoplay .play {
+    font-size: 16px;
+    width: 72px;
+    height: 32px;
+    background: white;
+    border: 1px solid white;
+    border: 2px solid #00599F;
+    cursor: pointer;
+}
+
+.slider .dots {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    top: 26.5px;
+    left: 120px;
+    z-index: 10;
+}
+
+.slider .dots button {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00599F;
+    margin: 3px;
+    cursor: pointer;
+
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.slider .dots button.active {
+    margin: 1px 0;
+    width: 26px;
+    height: 24px;
+}
+
+.slider .prev,
+.slider .next {
+    position: absolute;
+    top: 50%;
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 1px solid white;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.slider .prev {
+    left: 0;
+}
+
+.slider .next {
+    right: 0;
+}
+
+.slider .slick .item {
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

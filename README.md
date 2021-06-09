@@ -1,2 +1,2 @@
 # slick-slider-a11y
-Slick slider implementation with essential acessibility rules
+Slick slider implementation with essential accessibility rules
